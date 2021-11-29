@@ -10,11 +10,19 @@ import {
 } from '@angular/fire/firestore';
 import {environment} from "../environments/environment";
 import {getStorage, provideStorage} from "@angular/fire/storage";
+import { LoginComponent } from './login/login.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { MainComponent } from './main/main.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    RegistrationComponent,
+    MainComponent,
+    AdminComponent
   ],
   imports: [
     provideFirebaseApp(() => initializeApp(environment.firebase)),
