@@ -14,6 +14,7 @@ import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { MainComponent } from './main/main.component';
 import { AdminComponent } from './admin/admin.component';
+import {AppRoutingModule} from "./app-routing.module";
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { AdminComponent } from './admin/admin.component';
     provideFirestore(() => getFirestore()),
     provideStorage(() => getStorage()),
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
