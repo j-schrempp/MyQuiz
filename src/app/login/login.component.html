@@ -1,1 +1,27 @@
-<p>login works!</p>
+<div id="main">
+  <div id="contents">
+    <div id="label">
+      Login
+    </div>
+    <div id="form">
+      <div class="mail-area">
+        <input type="text" placeholder="E-Mail" [(ngModel)]="email" class="inputText" id="email">
+      </div>
+      <div class="password-area">
+        <input type="password" placeholder="Passwort" [(ngModel)]="password" class="inputText" id="password"
+               [type]="hide ? 'password' : 'text'">
+        <mat-icon class="material-icons field-icon"
+                  (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </div>
+      <div class="loginbutton-area">
+        <button mat-fab id="loginBTN" style="align-self: center">
+          <mat-icon class="material-icons">arrow_forward</mat-icon>
+        </button>
+      </div>
+      <div class="needRegistry-area">
+        <p>Du hast noch keinen Accout?</p>
+        <p id="registry-redirect">Click Hier!</p>
+      </div>
+    </div>
+  </div>
+</div>

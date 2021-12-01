@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+  password: string = "";
+  hide: boolean = true;
+  email: string = "";
+
+  passErr: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
