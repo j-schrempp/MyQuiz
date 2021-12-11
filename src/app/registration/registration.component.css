@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap');
+
+#main {
+  display: flex;
+  justify-content: center;
+}
+
+#contents {
+  margin-top: 15rem;
+  width: 35rem;
+}
+
+#label {
+  font-size: xx-large;
+  margin-bottom: 1rem;
+  font-family: 'Arimo', sans-serif;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  gap: 2rem;
+  background-color: #e6e6e6;
+  justify-content: center;
+  border-radius: 7px;
+}
+
+
+.inputText {
+  padding: 10px;
+  font-family: 'Arimo', sans-serif;
+  font-size: large;
+  border-radius: 7px;
+  border: 2px;
+}
+
+.field-icon {
+  top: 0;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+  margin: .5rem;
+}
+
+.password-area{
+  margin-top: 2rem;
+}
+
+.mail-area {
+  margin-top: 2rem;
+}
+.mail2-area {
+  margin-top: 2rem;
+}
+
+.loginbutton-area {
+  margin-top: 2rem;
+  justify-self: center;
+}
+
+.needRegistry-area{
+  margin-top: 2rem;
+  justify-self: center;
+}
+
+#registry-redirect{
+  cursor: pointer;
+  text-decoration: underline;
+  text-align: center;
+  font-size: medium;
+}
+
+.passwordContainer{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}

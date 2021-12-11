@@ -20,6 +20,7 @@
   display: grid;
   background-color: #e6e6e6;
   justify-content: center;
+  border-radius: 7px;
 }
 
 #password{
@@ -46,23 +47,19 @@
 }
 
 .password-area{
-  grid-row: 2;
   margin-top: 2rem;
 }
 
 .mail-area {
-  grid-row: 1;
   margin-top: 2rem;
 }
 
 .loginbutton-area {
-  grid-row: 3;
   margin-top: 2rem;
   justify-self: center;
 }
 
 .needRegistry-area{
-  grid-row: 4;
   margin-top: 2rem;
   justify-self: center;
 }

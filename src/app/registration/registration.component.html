@@ -1,1 +1,27 @@
-<p>registration works!</p>
+<div id="main">
+  <div id="contents">
+    <div id="label">
+      Registrierung
+    </div>
+    <div id="form">
+      <input type="text" placeholder="Name" [(ngModel)]="name" class="inputText" id="name">
+      <input type="text" placeholder="E-Mail" [(ngModel)]="email" class="inputText" id="email">
+      <div class="passwordContainer">
+        <input type="password" placeholder="Passwort" [(ngModel)]="password" class="inputText" id="password1"
+               [type]="hide ? 'password' : 'text'">
+        <mat-icon class="material-icons field-icon"
+                  (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </div>
+      <div class="passwordContainer">
+        <input type="password" placeholder="Passwort" [(ngModel)]="password2" class="inputText" id="password2"
+               [type]="hide2 ? 'password' : 'text'">
+        <mat-icon class="material-icons field-icon"
+                  (click)="hide2 = !hide2">{{hide2 ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </div>
+      <button mat-fab id="loginBTN" style="align-self: center">
+        <mat-icon class="material-icons">arrow_forward</mat-icon>
+      </button>
+      <p id="registry-redirect" (click)="acc_Clicked()">Du hast schon einen Accout?</p>
+    </div>
+  </div>
+</div>

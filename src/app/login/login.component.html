@@ -14,13 +14,12 @@
                   (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
       </div>
       <div class="loginbutton-area">
-        <button mat-fab id="loginBTN" style="align-self: center">
+        <button mat-fab id="loginBTN" style="align-self: center" (click)="login_clicked()">
           <mat-icon class="material-icons">arrow_forward</mat-icon>
         </button>
       </div>
       <div class="needRegistry-area">
-        <p>Du hast noch keinen Accout?</p>
-        <p id="registry-redirect">Click Hier!</p>
+        <p id="registry-redirect" (click)="no_Acc_clicked()">Du hast noch keinen Accout?</p>
       </div>
     </div>
   </div>
